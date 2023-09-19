@@ -35,6 +35,7 @@
     
     .project-card{
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+        background-color: #141414;
     } 
 
     .about-info{
@@ -49,7 +50,7 @@
 
     .icon{
         background: var(--color-white);
-        box-shadow: rgba(52, 52, 102, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+        box-shadow: rgba(134, 68, 68, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
         
     }
 
@@ -63,7 +64,7 @@
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    padding-top: 0.8em;
+    padding-top: 1.5em;
     
   }
   .theme-switch {
@@ -78,7 +79,7 @@
   }
   
   .slider {
-    background-color: #ccc;
+    background-color: #df9800;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -89,7 +90,7 @@
   }
   
   .slider:before {
-    background-color: #fff;
+    background-color: #ffffff;
     bottom: 4px;
     content: "";
     height: 26px;
@@ -100,7 +101,7 @@
   }
   
   input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: #00028d;
   }
   
   input:checked + .slider:before {
@@ -171,23 +172,6 @@ i{
 }
 
 /* ------- BASE -------- */
-body{
-    background: var(--body-color);
-    cursor: url("../img/pointer/arrow.cur"), default;
-
-}
-
-a, .btn, img.project-img-card, div.icon{
-    cursor: url("../img/pointer/link.cur"), pointer;
-}
-
-.input-field, .mensage{
-    cursor: url("../img/pointer/text.cur"), text;
-}
-
-a.nav-link{
-    cursor: url("../img/pointer/up.cur"), n-resize;
-}
 
 .container{
     width: 100%;
@@ -300,7 +284,7 @@ nav{
     margin-block: 20px;
 }
 .typedText{
-    text-transform: capitalize;
+    text-transform:none;
     color: var(--text-color-third);
 }
 .featured-text-info{
@@ -495,7 +479,7 @@ h3{
     border-radius: 15px;
     height: 400px;
     width: 300px;
-    /*background-color: rgb(0, 0, 0);*/
+    background-color: #efefef;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     filter: grayscale(10%);
@@ -676,6 +660,28 @@ footer{
     margin-top: 10px;
 }
 
+/* ------ MOUSE POINTERS ------- */
+
+body{
+    background: var(--body-color);
+    cursor: url("../img/pointer/arrow.cur"), default;
+}
+
+div.slider.round, a.scroll-btn{
+    cursor: url("../img/pointer/circle.cur"), all-scroll;
+}
+
+a, .btn, img.project-img-card, div.icon{
+    cursor: url("../img/pointer/link.cur"), pointer;
+}
+
+.input-field, .mensage{
+    cursor: url("../img/pointer/text.cur"), text;
+}
+
+a.nav-link{
+    cursor: url("../img/pointer/up.cur"), n-resize;
+}
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
@@ -784,6 +790,3 @@ footer{
     }
 }
 
-*{
-    cursor: url('https://icons8.com/icon/oI67QbuKf2Tv/cursor');
-}

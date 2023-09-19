@@ -58,13 +58,12 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  let typingEffect = new Typed(".typedText",{
-    strings : ["Estudante","Developer"],
+    strings : ['String nome = "Jhonata Batista";','nome = str("Jhonata Batista")','$nome = "Jhonata Batista";'],
     loop : true,
-    typeSpeed : 200, 
-    backSpeed : 80,
-    backDelay : 2000
+    typeSpeed : 100, 
+    backSpeed : 100,
+    backDelay : 200
  })
-
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
  const sr = ScrollReveal({
@@ -112,8 +111,6 @@ const srRight = ScrollReveal({
 
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
-
-
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
