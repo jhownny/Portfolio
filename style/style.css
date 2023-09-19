@@ -57,6 +57,22 @@
     .scroll-btn{
         box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.25);
     }
+
+    /* ----- MEDIA QUERY == 900px / RESPONSIVE DARK MODE ----- */
+    @media only screen and (max-width: 900px) {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(20%);
+        .nav-menu-btn{
+            filter: invert();
+        }
+        .nav-link{
+            color: black;
+        }
+        .active-link{
+            color: rgb(44, 133, 9);
+        }
+
+    }
     
 }
 
