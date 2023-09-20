@@ -699,6 +699,10 @@ a.nav-link{
     cursor: url("../img/pointer/up.cur"), n-resize;
 }
 
+.contact-info{
+  cursor: url("../img/pointer/unavail.cur"), not-allowed;
+}
+
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
