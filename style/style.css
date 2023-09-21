@@ -19,7 +19,10 @@
 
 }
 
+/* ----- RESPONSIVE DARK MODE ----- */
+
 [data-theme="dark"] {
+
     --body-color: rgb(0, 0, 0);
     --color-white: rgb(255, 255, 255);
 
@@ -33,29 +36,37 @@
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(255, 255, 255, 0.1);
     
+
+    /* ----- FEATURED TEXT BOX / RESPONSIVE DARK MODE ----- */
+    .icon{
+        background: var(--color-white);
+        box-shadow: rgba(134, 68, 68, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+    }
+
+    /* ----- FEATURED IMAGE BOX / RESPONSIVE DARK MODE ----- */
+    .scroll-btn{
+        box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.25);
+    }
+
+    /* ----- ABOUT INFO / RESPONSIVE DARK MODE ----- */
+    .about-info{
+        box-shadow: rgba(52, 52, 102, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+    }
+
+    /* ----- PROJECTS BOX / RESPONSIVE DARK MODE ----- */
     .project-card{
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
         background-color: #141414;
     } 
 
-    .about-info{
-        box-shadow: rgba(52, 52, 102, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
-
-    }
-
+    /* ----- CONTACT BOX / RESPONSIVE DARK MODE ----- */
     .contact-info{
         box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-        
     }
-
-    .icon{
-        background: var(--color-white);
-        box-shadow: rgba(134, 68, 68, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
-        
-    }
-
-    .scroll-btn{
-        box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.25);
+    
+    /* ----- CONTACT FORM / RESPONSIVE DARK MODE ----- */
+    .input-field, .mensage{
+        color: white;
     }
 
     /* ----- MEDIA QUERY == 900px / RESPONSIVE DARK MODE ----- */
@@ -334,7 +345,7 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
-.icon:hover{
+.icon:hover, a:hover{
     color: var(--first-color);
 }
 
@@ -637,7 +648,7 @@ textarea{
     color: var(--color-white);
 }
 .form-button>.btn:hover{
-    background: #00B5E7;
+    background: rgb(30, 159, 171);
 }
 .form-button i{
     font-size: 18px;
@@ -684,10 +695,6 @@ footer{
 body{
     background: var(--body-color);
     cursor: url("../img/pointer/arrow.cur"), default;
-}
-
-a.scroll-btn{
-    cursor: url("../img/pointer/circle.cur"), all-scroll;
 }
 
 a, .btn, img.project-img-card, div.icon, div.slider.round{
