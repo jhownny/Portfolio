@@ -283,7 +283,7 @@ nav{
     align-content: center;
     min-height: 80vh;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     padding-left: 20px;
 }
 .featured-text-card span{
@@ -382,6 +382,9 @@ nav{
 }
 .scroll-btn i{
     font-size: 20px;
+}
+.uil{
+    filter: grayscale(100%);
 }
 
 /* ----- MAIN BOX ----- */
@@ -683,20 +686,16 @@ body{
     cursor: url("../img/pointer/arrow.cur"), default;
 }
 
-div.slider.round, a.scroll-btn{
+a.scroll-btn{
     cursor: url("../img/pointer/circle.cur"), all-scroll;
 }
 
-a, .btn, img.project-img-card, div.icon{
+a, .btn, img.project-img-card, div.icon, div.slider.round{
     cursor: url("../img/pointer/link.cur"), pointer;
 }
 
 .input-field, .mensage{
     cursor: url("../img/pointer/text.cur"), text;
-}
-
-a.nav-link{
-    cursor: url("../img/pointer/up.cur"), n-resize;
 }
 
 .contact-info{
@@ -791,6 +790,7 @@ a.nav-link{
         width: 80%;
     }
 
+    
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */

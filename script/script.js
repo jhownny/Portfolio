@@ -62,16 +62,16 @@ let typingEffect = new Typed(".typedText",{
   loop : true,
   typeSpeed : 100, 
   backSpeed : 100,
-  backDelay : 200
+  backDelay : 2000
 })
 
-let nameTypingEffect  = new Typed(".typedTextName", {
+/*let nameTypingEffect  = new Typed(".typedTextName", {
    strings : ['Jhownny'],
   loop : false,
   typeSpeed : 200, 
   backSpeed : 100,
   backDelay : 200
-})
+})*/
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
 const sr = ScrollReveal({
@@ -91,7 +91,7 @@ sr.reveal('.featured-image',{delay: 300})
 
 
 /* -- PROJECT BOX -- */
-sr.reveal('.project-box',{interval: 200})
+sr.reveal('.project-container',{interval: 200})
 
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
