@@ -796,7 +796,7 @@ div.slider.round {
 }
 
 .contact-info {
-    cursor: url("../img/pointer/unavail.cur"), not-allowed;
+    cursor: url("../img/pointer/person.cur");
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
