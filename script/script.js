@@ -38,21 +38,34 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 window.onscroll = function() {headerShadow()};
 
 function headerShadow() {
-  const navHeader =document.getElementById("header");
+  const navHeader = document.getElementById("header");
+  const currentTheme = localStorage.getItem('theme');
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
-
-    navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+  if (currentTheme === 'dark'){
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // Set box shadow to white when in dark mode and scrolling
+    navHeader.style.boxShadow = "0 1px 6px rgba(255, 255, 255, 0.25)";
     navHeader.style.height = "70px";
     navHeader.style.lineHeight = "70px";
-
-  } else {
-
+    } else{
+    // Default behavior for light mode or when not scrolling
     navHeader.style.boxShadow = "none";
     navHeader.style.height = "90px";
     navHeader.style.lineHeight = "90px";
-
-  }
+    }
+  }if (currentTheme === 'light'){
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      // Set box shadow to white when in dark mode and scrolling
+      navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+      navHeader.style.height = "70px";
+      navHeader.style.lineHeight = "70px";
+      } else{
+      // Default behavior for light mode or when not scrolling
+      navHeader.style.boxShadow = "none";
+      navHeader.style.height = "90px";
+      navHeader.style.lineHeight = "90px";
+      }
+  } 
 }
 
 
