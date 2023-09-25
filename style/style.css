@@ -36,16 +36,33 @@
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(255, 255, 255, 0.1);
 
+    /* ----- CHANGE THE SCROLL BAR DESIGN / RESPONSIVE DARK MODE ----- */
+    ::-webkit-scrollbar-track {
+        background: rgb(20, 20, 20);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgb(30, 30, 30);
+        border-radius: 30px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(40, 40, 40);
+    }
 
     /* ----- FEATURED TEXT BOX / RESPONSIVE DARK MODE ----- */
     .icon {
         background: var(--color-white);
-        box-shadow: rgba(134, 68, 68, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+        box-shadow: rgba(155, 155, 155, 0.74) 10px 50px 100px -20px, rgba(52, 52, 102, 0.877) 0px 5px 60px 6px; 
+    }
+
+    .icon a:hover, .icon:hover{
+        color: var(--text-color-third);
     }
 
     /* ----- FEATURED IMAGE BOX / RESPONSIVE DARK MODE ----- */
     .scroll-btn {
-        box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.25);
+        box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.411);
     }
 
     /* ----- ABOUT INFO / RESPONSIVE DARK MODE ----- */
@@ -55,7 +72,7 @@
 
     /* ----- PROJECTS BOX / RESPONSIVE DARK MODE ----- */
     .project-card {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+        box-shadow: 0px 0px 80px -30px rgb(57, 67, 126), rgb(255, 255, 255) 0px 0px 42px -45px;
         background-color: #141414;
     }
 
@@ -385,6 +402,7 @@ nav {
 
 .icon:hover,
 a:hover {
+    filter: grayscale(0%);
     color: var(--first-color);
 }
 
@@ -403,6 +421,7 @@ a:hover {
     width: 380px;
     height: 380px;
     animation: imgFloat 7s ease-in-out infinite;
+
 }
 
 .image img {
@@ -503,7 +522,7 @@ h3 {
     color: #777;
 }
 
-.about-btn button {
+/*.about-btn button.btn {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -514,7 +533,7 @@ h3 {
 
 .about-btn button:hover {
     background: var(--first-color-hover);
-}
+}*/
 
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box {
@@ -799,9 +818,9 @@ div.slider.round {
     cursor: url("../img/pointer/person.cur"), pointer;
 }
 
-.about-btn.btn, .featured-text-btn.btn{
+/*button.btn{
     cursor:url("../img/pointer/unavail.cur"), not-allowed;
-}
+}*/
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
@@ -871,7 +890,7 @@ div.slider.round {
     }
 
     .scroll-btn{
-        left: 75%;
+        opacity: 0%;
     }
 
     .featured-image {
