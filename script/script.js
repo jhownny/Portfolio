@@ -1,17 +1,3 @@
-
-const blob = document.getElementById("blob");
-window.onpointermove = (event) => {
-    const { clientX, clientY } = event;
-    blob.animate(
-        {
-            left: `${clientX}px`,
-            top: `${clientY}px`
-        },
-        { duration: 1000, fill: "forwards" }
-    );
-};
-
-
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
   let menuBtn = document.getElementById("myNavMenu");
@@ -171,8 +157,18 @@ sections.forEach(current =>{
 })
 }
 
+/* ----- MOUSE EFFECT ----- */
+
 window.addEventListener('scroll', scrollActive)
 
-
-
-
+const blob = document.getElementById("blob");
+window.onpointermove = (event) => {
+    const { clientX, clientY } = event;
+    blob.animate(
+        {
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        },
+        { duration: 1000, fill: "forwards" }
+    );
+};
