@@ -1,3 +1,17 @@
+
+const blob = document.getElementById("blob");
+window.onpointermove = (event) => {
+    const { clientX, clientY } = event;
+    blob.animate(
+        {
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        },
+        { duration: 1000, fill: "forwards" }
+    );
+};
+
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
   let menuBtn = document.getElementById("myNavMenu");
@@ -158,3 +172,7 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+
+
