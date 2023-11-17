@@ -95,7 +95,7 @@
     #blob{
         opacity: 15%;
         box-shadow: rgb(17, 0, 255) /*posição horizontal?*/0px /*posição vertical?*/0px /*blur*/90px /*tamanho*/100px;
-        background-color: #000000;
+        background-color: #09ff00;
     }
 
     /* ----- MEDIA QUERY == 900px / RESPONSIVE DARK MODE ----- */
@@ -439,7 +439,7 @@ a:hover {
 
 @keyframes imgFloat {
     50% {
-        transform: translateY(10px);
+        transform: translateY(50px);
     }
 }
 
@@ -774,6 +774,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
     flex-direction: column;
     row-gap: 30px;
     background: #F8F8F8;
@@ -841,7 +842,7 @@ div.slider.round {
 /* ----- MOUSE EFFECT ----- */
 
 #blob {
-    background-color: #ffffff;
+    background-color: rgb(17, 0, 255);
     height: 0vmax;
     aspect-ratio: 1;
     position:fixed ;
@@ -850,8 +851,8 @@ div.slider.round {
     translate: -50% -50%;
     border-radius: 60%;
     background: linear-gradient(to bottom, #000000, var(--body-color));
-    opacity: 10%;
-    box-shadow: #ff0000 /*posição horizontal?*/0px /*posição vertical?*/0px /*blur*/80px /*tamanho*/100px;
+    opacity: 30%;
+    box-shadow: #48ff00 /*posição horizontal?*/0px /*posição vertical?*/0px /*blur*/80px /*tamanho*/80px;
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */

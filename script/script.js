@@ -71,7 +71,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText",{
-  strings : ['String nome = "Jhonata Batista";','nome = str("Jhonata Batista")','$nome = "Jhonata Batista";'],
+  strings : ['String nome = "Jhonata Batista";','nome = str("Jhonata Batista")','$nome = "Jhonata Batista";','var nome = "Jhonata Batista";','val nome = "Jhonata Batista"'],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 100,
@@ -169,6 +169,6 @@ window.onpointermove = (event) => {
             left: `${clientX}px`,
             top: `${clientY}px`
         },
-        { duration: 1000, fill: "forwards" }
+        { duration: 100, fill: "forwards" }
     );
 };
