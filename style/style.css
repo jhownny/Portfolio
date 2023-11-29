@@ -115,6 +115,10 @@
             color: rgb(44, 133, 9);
         }
 
+        #blob {
+            opacity: 0%;
+        }
+
     }
 
 }
@@ -966,12 +970,24 @@ div.slider.round {
         width: 80%;
     }
 
+    #blob {
+
+        opacity: 0%;
+
+    }
+
 
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px) {
+    #blob {
+
+        opacity: 0%;
+
+    }
+
     .featured-name {
         font-size: 40px;
     }
