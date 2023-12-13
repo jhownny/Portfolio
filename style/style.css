@@ -62,6 +62,10 @@
     }
 
     /* ----- FEATURED IMAGE BOX / RESPONSIVE DARK MODE ----- */
+    .image {
+        filter: invert(100%);
+    }
+
     .scroll-btn {
         box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.411);
     }
@@ -432,7 +436,6 @@ a:hover {
     width: 380px;
     height: 380px;
     animation: imgFloat 7s ease-in-out infinite;
-
 }
 
 .image img {
